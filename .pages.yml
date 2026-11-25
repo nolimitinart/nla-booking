@@ -1,0 +1,77 @@
+media:
+  - name: images
+    label: Photos et logos
+    input: assets
+    output: /assets
+    categories: [image]
+    rename: safe
+  - name: videos
+    label: Vidéos courtes
+    input: assets/videos
+    output: /assets/videos
+    categories: [video]
+    rename: safe
+content:
+  - name: site
+    label: Textes et réglages du site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: site_name, label: Nom du site, type: string }
+      - { name: tagline, label: Slogan, type: string }
+      - { name: seo_title, label: Titre Google, type: string }
+      - { name: seo_description, label: Description Google, type: text }
+      - { name: domain, label: Adresse publique du site, type: string }
+      - { name: logo, label: Logo officiel NLA, type: image, options: { media: images } }
+      - { name: hero_image, label: Image de couverture (facultatif), type: image, options: { media: images } }
+      - { name: hero_eyebrow, label: Surtitre accueil, type: string }
+      - { name: hero_line_1, label: Accueil ligne 1, type: string }
+      - { name: hero_line_2, label: Accueil ligne 2, type: string }
+      - { name: hero_line_3, label: Accueil ligne 3, type: string }
+      - { name: hero_description, label: Texte de présentation, type: text }
+      - { name: artists_intro, label: Introduction artistes, type: text }
+      - { name: manifesto_title, label: Manifeste titre, type: string }
+      - { name: manifesto_highlight, label: Manifeste accent, type: string }
+      - { name: manifesto_text, label: Texte manifeste, type: text }
+      - { name: about_paragraph_1, label: À propos — paragraphe 1, type: text }
+      - { name: about_paragraph_2, label: À propos — paragraphe 2, type: text }
+      - { name: contact_intro, label: Introduction contact, type: text }
+      - { name: contact_email, label: E-mail de réception des demandes, type: string }
+      - { name: contact_location, label: Implantation, type: string }
+      - name: services
+        label: Nos trois services
+        type: object
+        list: { min: 3, max: 3, collapsible: { collapsed: true, summary: '{title}' } }
+        fields:
+          - { name: title, label: Titre, type: string }
+          - { name: description, label: Présentation, type: text }
+          - { name: footer, label: Accroche courte, type: string }
+  - name: artists
+    label: Artistes — textes, photos et vidéos
+    type: file
+    path: content/artists.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: Identifiant URL (sans accents ni espaces), type: string, required: true, pattern: '^[a-z0-9-]+$' }
+      - { name: name, label: Nom de l’artiste, type: string, required: true }
+      - { name: visible, label: Afficher sur le site, type: boolean }
+      - name: category
+        label: Expression artistique
+        type: select
+        options:
+          values: [Live, DJ, Traditions, Humour, Danse]
+      - { name: genre, label: Style artistique, type: string }
+      - { name: origin, label: Nature de la prestation, type: string }
+      - { name: short, label: Description courte, type: text }
+      - { name: description, label: Biographie / présentation, type: text }
+      - { name: details, label: Informations de programmation, type: text }
+      - { name: image, label: Photo principale, type: image, options: { media: images } }
+      - { name: position, label: Cadrage CSS (ex. center 35%), type: string }
+      - { name: accent, label: Couleur hexadécimale, type: string }
+      - { name: monogram, label: Étiquette photo, type: string }
+      - { name: video_url, label: Lien YouTube / Vimeo (vidéo), type: string, description: 'Utiliser un lien vidéo public ; évite de déposer de très gros fichiers sur GitHub.' }
+      - { name: video_file, label: Ou fichier vidéo court (MP4/WebM), type: file, options: { media: videos, categories: [video] } }
+      - { name: website_url, label: Site officiel / lien externe, type: string }
+      - { name: seo_description, label: Description pour Google, type: text }
