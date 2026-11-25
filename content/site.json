@@ -1,0 +1,40 @@
+{
+  "site_name": "NLA Booking",
+  "tagline": "Des artistes. Des scènes. Des rencontres.",
+  "seo_title": "NLA Booking | Booking d’artistes à Bruxelles et en Europe",
+  "seo_description": "NLA Booking, service de booking artistique de No Limit in Art ASBL à Bruxelles. Concerts, DJ, danse, humour et spectacles traditionnels pour festivals et programmateurs.",
+  "hero_eyebrow": "BOOKING & DÉVELOPPEMENT ARTISTIQUE",
+  "hero_line_1": "DES ARTISTES.",
+  "hero_line_2": "DES SCÈNES.",
+  "hero_line_3": "DES RENCONTRES.",
+  "hero_description": "Nous créons des connexions entre les talents, les programmateurs et les publics. Une vision du booking portée par No Limit in Art.",
+  "artists_intro": "Explorez différents univers artistiques à travers des photos authentiques : concerts, traditions, DJ, humour et danse. Présentations à titre de découverte, sans indication de représentation exclusive.",
+  "manifesto_title": "AU-DELÀ DU CACHET,",
+  "manifesto_highlight": "LA RENCONTRE.",
+  "manifesto_text": "Chaque scène raconte une histoire. Nous faisons du booking un espace de circulation des idées, des sons et des cultures.",
+  "about_paragraph_1": "NLA Booking est le service de booking de l'ASBL No Limit in Art, basée à Bruxelles. Il s'inscrit dans une démarche de valorisation artistique, de rencontres interculturelles et de développement de projets.",
+  "about_paragraph_2": "Notre expérience de l’événementiel et de la coordination culturelle nourrit une conviction simple : une bonne programmation commence par une bonne relation.",
+  "contact_intro": "Festival, concert, événement culturel ou programmation privée : décrivez-nous votre projet et nous prendrons contact avec vous.",
+  "contact_email": "nla.asbl@gmail.com",
+  "contact_location": "BRUXELLES, BELGIQUE",
+  "logo": "",
+  "domain": "https://chimerical-sunflower-f36dae.netlify.app",
+  "hero_image": "",
+  "services": [
+    {
+      "title": "Booking artistique",
+      "description": "Mise en relation entre artistes, salles, festivals, collectivités et organisateurs d'événements.",
+      "footer": "ARTISTES × PROGRAMMATEURS"
+    },
+    {
+      "title": "Coordination de dates",
+      "description": "Échanges techniques, suivi de production, logistique et préparation des conditions d'accueil.",
+      "footer": "DE LA DEMANDE AU SHOW"
+    },
+    {
+      "title": "Circulation culturelle",
+      "description": "Développement de passerelles entre la Belgique, l’Europe et les scènes artistiques internationales.",
+      "footer": "DÉPASSER LES FRONTIÈRES"
+    }
+  ]
+}
