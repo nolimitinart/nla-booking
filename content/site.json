@@ -3,6 +3,8 @@
   "tagline": "Des artistes. Des scènes. Des rencontres.",
   "seo_title": "NLA Booking | Booking d’artistes à Bruxelles et en Europe",
   "seo_description": "NLA Booking, service de booking artistique de No Limit in Art ASBL à Bruxelles. Concerts, DJ, danse, humour et spectacles traditionnels pour festivals et programmateurs.",
+  "domain": "https://chimerical-sunflower-f36dae.netlify.app",
+  "logo": "/assets/logonla-1.png",
   "hero_eyebrow": "BOOKING & DÉVELOPPEMENT ARTISTIQUE",
   "hero_line_1": "DES ARTISTES.",
   "hero_line_2": "DES SCÈNES.",
@@ -17,9 +19,6 @@
   "contact_intro": "Festival, concert, événement culturel ou programmation privée : décrivez-nous votre projet et nous prendrons contact avec vous.",
   "contact_email": "nla.asbl@gmail.com",
   "contact_location": "BRUXELLES, BELGIQUE",
-  "logo": "",
-  "domain": "https://chimerical-sunflower-f36dae.netlify.app",
-  "hero_image": "",
   "services": [
     {
       "title": "Booking artistique",
